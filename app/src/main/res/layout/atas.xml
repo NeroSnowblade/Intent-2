@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtasActivity">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="12pt"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Anda pergi ke Atas \n Pilih jalur yang diinginkan"/>
+
+    <Button
+        android:id="@+id/tombol_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="20dp"
+        android:background="#E69696"
+        android:text="Atas"/>
+
+    <Button
+        android:id="@+id/tombol_bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tombol_atas"
+        android:text="Bawah"/>
+
+    <Button
+        android:id="@+id/tombol_kanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tombol_bawah"
+        android:text="Kanan"/>
+
+    <Button
+        android:id="@+id/tombol_kiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tombol_kanan"
+        android:text="Kiri"/>
+
+    <TextView
+        android:id="@+id/posisi_awal"
+        android:textSize="12pt"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tombol_kiri"
+        android:text="Posisi Sebelumnya"/>
+
+    <TextView
+        android:id="@+id/value_posisi_awal"
+        android:textSize="12pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/posisi_awal"
+        android:text="-"/>
+
+    <TextView
+        android:id="@+id/posisi_akhir"
+        android:textSize="12pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/value_posisi_awal"
+        android:text="Posisi Sekarang"/>
+
+    <TextView
+        android:id="@+id/value_posisi_akhir"
+        android:textSize="12pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/posisi_akhir"
+        android:text="-"/>
+
+</RelativeLayout>
