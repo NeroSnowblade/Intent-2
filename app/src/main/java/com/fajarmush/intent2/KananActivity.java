@@ -12,14 +12,15 @@ public class KananActivity extends AppCompatActivity implements View.OnClickList
     Button atas, bawah, kiri, kanan;
     String direksi_awal = "Kanan";
 
-    Bundle bundle = getIntent().getExtras();
-    String d_awal = bundle.getString("direksi_sebelum");
-    String d_akhir = bundle.getString("direksi_sekarang");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.kanan);
+
+        Bundle bundle = getIntent().getExtras();
+        String d_awal = bundle.getString("direksi_sebelum");
+        String d_akhir = bundle.getString("direksi_sekarang");
 
         TextView sebelum = (TextView) findViewById(R.id.value_posisi_awal);
         sebelum.setText(d_awal);
